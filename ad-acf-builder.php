@@ -49,6 +49,8 @@ load_plugin_textdomain( 'ad-acfb', false, basename( dirname( __FILE__ ) ) . '/la
 --------------------------------------------- */
 
 
+// To-do…
+
 
 /* ------------------------------------------
 // Enqueue CSS ------------------------------
@@ -71,15 +73,18 @@ add_action('wp_enqueue_scripts', 'acfb_css');
 
 
 /* ------------------------------------------
-// ACF Fields -------------------------------
+// ACF Fields & Ouput -----------------------
 --------------------------------------------- */
 
 // require_once('acf/acfb-fields.php' );  /// UNTIL OK !
+require_once('acf/acfb-output.php');
+
 
 
 /* ------------------------------------------
 // Filter the_content -----------------------
 --------------------------------------------- */
+
 
 add_filter( 'the_content', 'acfb_fields' );
  
@@ -88,7 +93,7 @@ function acfb_fields( $content ) {
     if ( is_single() || is_page() && in_the_loop() && is_main_query() ) {
 		
 		ob_start();
-	    require_once('acf/acfb-output.php');
+	    acfb_ouput();
 		
 		$acf = ob_get_clean();
 		
@@ -97,3 +102,8 @@ function acfb_fields( $content ) {
     }
     return $content;
 }
+
+
+// OUTPUT
+
+

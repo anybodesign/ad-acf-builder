@@ -1,6 +1,6 @@
 === AD ACF Builder ===
 Contributors: anybodesign
-Tags: PAge Builder, ACF
+Tags: Page Builder, ACF
 Requires at least: 4.0
 Tested up to: 4.8
 Stable tag: 1.0
@@ -21,13 +21,13 @@ AD ACF Builder…
 = To-Do = 
 
 * …
-* ∞
+* …
 
 
 == Installation ==
 
 * Download the zip archive and upload it to your WordPress site.
-* Activate ACF Pro. 
+* Activate ACF Pro 5.6. 
 * Activate the plugin. 
 * The builder is now available on your posts and pages!
 
