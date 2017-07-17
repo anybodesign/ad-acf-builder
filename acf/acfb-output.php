@@ -166,7 +166,7 @@
 			//
 			// Content Gallery
 			// 		
-			// - - - - - - - - - - 
+			// - - - - - - - - - - */
 	?>
 		
 		<?php elseif ( get_row_layout() == 'content_gallery_block' ): ?>	
@@ -174,8 +174,8 @@
 		<div class="acfb-block--content-gallery">
 			<?php 
 				$title = get_sub_field('content_gallery_block_title');
-				$content = get_sub_field('content_gallery_block_content');
 				$cols = get_sub_field('content_gallery_block_cols');					
+				$content = get_sub_field('content_gallery_block_content');
 			?>
 			
 			<?php if( $title ) { ?>
@@ -187,21 +187,19 @@
 			<?php if( $content ): ?>
 			<div class="acfb-row">
 				
-			<?php foreach( $content as $content_object): ?>
+			<?php foreach( $content as $c ): ?>
 				<div class="<?php echo $cols; ?> mid-6 small-6">
+			        
 			        <figure class="gallery-figure">
-			            <a href="<?php echo get_permalink($content_object->ID); ?>">
-				            <?php if ( has_post_thumbnail( $content_object->ID ) ) { 
-				            	echo get_the_post_thumbnail($content_object->ID, 'thumbnail'); 
-				            } else { ?>
-					            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/fallback-image.png" alt="image de remplacement"> 
-				           <?php } ?>
+			            <a href="<?php echo get_permalink( $c->ID ); ?>">
+				            <?php echo get_the_post_thumbnail( $c->ID, 'thumbnail' ); ?>
 							<figcaption class="gallery-caption">
-								<span class="gallery-title"><?php echo get_the_title($content_object->ID); ?></span>
-								<?php echo get_the_excerpt($content_object->ID); ?>
+								<span class="gallery-title"><?php echo get_the_title( $c->ID ); ?></span>
+								<?php //echo get_the_excerpt( $c->ID ); ?>
 							</figcaption>
 				        </a>
 				    </figure>
+				    
 				</div>
 			<?php endforeach; ?>
 			
@@ -210,9 +208,8 @@
 	
 		</div>
 		
-		*/ ?>
-			
-	
+
+
 	
 		<?php endif; // BUILDER Layouts End Here ?>
 		
