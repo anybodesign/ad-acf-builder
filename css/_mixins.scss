@@ -1,0 +1,56 @@
+// Break-Points
+
+
+$width-small: 25em; 		// @note: 400px
+$width-medium: 40em;		// @note: 640px
+$width-large: 50em; 		// @note: 800px
+$width-wide: 80em;	 		// @note: 1280px
+$width-xwide: 100em;		// @note: 1600px
+
+
+// Link As Block
+
+@mixin linkblock() {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 10;	
+}
+
+
+// Mobile First
+
+@mixin rwd($width) {
+	
+	@if $width == xwide {
+		@media only screen and (min-width: $width-xwide) {
+			@content;
+		}
+	}
+	@if $width == wide {
+		@media only screen and (min-width: $width-wide) {
+			@content;
+		}
+	}
+	@else if $width == large {
+		@media only screen and (min-width: $width-large) {
+			@content;
+		}
+	}
+	@else if $width == medium {
+		@media only screen and (min-width: $width-medium) {
+			@content;
+		}
+	}
+	@else if $width == small {
+		@media only screen and (min-width: $width-small) {
+			@content;
+		}
+	}
+	@else {
+		@media only screen and (min-width: $width) {
+			@content;
+		}
+	}
+}
+

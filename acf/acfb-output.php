@@ -93,17 +93,17 @@
 		<div class="acfb-block--cta<?php if( $color && in_array('white_text', $color) ) { echo ' acfb-white'; } ?>" style="background-color: <?php echo $bgcolor; ?>;">						
 		<?php } ?>
 			
+			<?php if( $text ) { ?>
 			<div class="acfb-cta-text">
-				<?php if( $text ) { echo $text; } ?>
-				
-				<?php if( $link ) : ?>
-					<a href="<?php echo $link['url']; ?>" class="acfb-cta-btn" target="<?php echo $link['target']; ?>" style="color:<?php echo $btncolor; ?>; background-color: <?php echo $btnbg; ?>">
-						<?php echo $link['title']; ?>
-					</a>
-				<?php endif; ?>
-				
-				
+				<?php echo $text; ?>
 			</div>
+			<?php } ?>
+
+			<?php if( $link ) : ?>
+			<a href="<?php echo $link['url']; ?>" class="acfb-cta-btn" target="<?php echo $link['target']; ?>" style="color:<?php echo $btncolor; ?>; background-color: <?php echo $btnbg; ?>">
+				<?php echo $link['title']; ?>
+			</a>
+			<?php endif; ?>
 										
 		</div>	
 	
