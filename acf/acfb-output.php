@@ -31,28 +31,28 @@
 			<div class="acfb-row">
 			<?php if ( $layout == '1col' ) { ?>
 	        	
-	        	<div class="col-12">
+	        	<div class="acfb-column">
 		        	<?php echo $text1;?>
 	        	</div>
 	        	
 			<?php } elseif ( $layout == '2col' ) { ?>
 	      
-	        	<div class="col-6">
+	        	<div class="acfb-column">
 		        	<?php echo $text1;?>
 	        	</div>
-	        	<div class="col-6">
+	        	<div class="acfb-column">
 		        	<?php echo $text2;?>
 	        	</div>
 	
 			<?php } elseif ( $layout == '3col' ) { ?>
 			
-				<div class="col-4">
+				<div class="acfb-column">
 		        	<?php echo $text1;?>
 	        	</div>
-	        	<div class="col-4">
+	        	<div class="acfb-column">
 		        	<?php echo $text2;?>
 	        	</div>
-	        	<div class="col-4">
+	        	<div class="acfb-column">
 		        	<?php echo $text3;?>
 	        	</div>
 	        	
@@ -84,27 +84,25 @@
 				$color = $style['cta_block_color'];
 				$bg = $style['cta_block_bg'];
 				$bgcolor = $style['cta_block_bgcolor'];
+				$blkover = $style['cta_block_overlay'];
 			?>
 			
 		<?php if( $bg ) { ?>
-		<div class="acfb-block--cta<?php if( $color && in_array('white_text', $color) ) { echo ' white'; } ?>" style="background-image: url(<?php echo $bg['url']; ?>); background-color: <?php echo $bgcolor; ?>;">
+		<div class="acfb-block--cta acfb-block--cta-img<?php if( $color && in_array('white_text', $color) ) { echo ' acfb-white'; } ?><?php if( $blkover && in_array('balck_overlay', $blkover) ) { echo ' acfb-overlay'; } ?>" style="background-image: url(<?php echo $bg['url']; ?>); background-color: <?php echo $bgcolor; ?>;">
 		<?php } else { ?>
-		<div class="acfb-block--cta" style="background-color: <?php echo $bgcolor; ?>;">						
+		<div class="acfb-block--cta<?php if( $color && in_array('white_text', $color) ) { echo ' acfb-white'; } ?>" style="background-color: <?php echo $bgcolor; ?>;">						
 		<?php } ?>
-		
-			<div class="acfb-row">
-					
-					<div class="cta-text">
-						<?php echo $text; ?>
-						
-						<?php if( $link ) { ?>
-							<a href="<?php echo $link['url']; ?>" class="cta-btn" target="<?php echo $link['target']; ?>" style="color:<?php echo $btncolor; ?>; background-color: <?php echo $btnbg; ?>">
-								<?php echo $link['title']; ?>
-							</a>
-						<?php } ?>
-						
-						
-					</div>
+			
+			<div class="acfb-cta-text">
+				<?php if( $text ) { echo $text; } ?>
+				
+				<?php if( $link ) : ?>
+					<a href="<?php echo $link['url']; ?>" class="acfb-cta-btn" target="<?php echo $link['target']; ?>" style="color:<?php echo $btncolor; ?>; background-color: <?php echo $btnbg; ?>">
+						<?php echo $link['title']; ?>
+					</a>
+				<?php endif; ?>
+				
+				
 			</div>
 										
 		</div>	
@@ -124,8 +122,8 @@
 		<div class="acfb-block--gallery">
 			<?php 
 				$title = get_sub_field('gallery_block_title');
-				$images = get_sub_field('gallery_block_img');
 				$cols = get_sub_field('gallery_block_cols');
+				$images = get_sub_field('gallery_block_img');
 			?>
 	
 			<?php if( $title ) { ?>
@@ -135,17 +133,17 @@
 			<?php } ?>
 			
 			<?php if( $images ): ?>
-			<div class="acfb-row">
+			<div class="acfb-gallery-row">
 				
 		        <?php foreach( $images as $image ): ?>
 		        <div class="acfb-<?php echo $cols; ?>">
 			        
-			        <figure class="gallery-figure">
+			        <figure class="acfb-gallery-figure">
 			            <a href="<?php echo $image['url']; ?>" title="<?php _e('Enlarge picture', 'ad-acfb'); ?>">
 				            <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>">
 							<?php if ( $image['caption'] ) { ?>
-							<figcaption class="gallery-caption">
-								<?php echo $image['caption']; ?>
+							<figcaption class="acfb-gallery-caption">
+								<span class="acfb-caption-title"><?php echo $image['caption']; ?></span>
 							</figcaption>
 							<?php } ?>
 				        </a>
@@ -185,17 +183,26 @@
 			<?php } ?>
 			
 			<?php if( $content ): ?>
-			<div class="acfb-row">
+			<div class="acfb-gallery-row">
 				
 			<?php foreach( $content as $c ): ?>
-				<div class="<?php echo $cols; ?> mid-6 small-6">
+				<div class="acfb-<?php echo $cols; ?>">
 			        
-			        <figure class="gallery-figure">
+			        <figure class="acfb-gallery-figure">
 			            <a href="<?php echo get_permalink( $c->ID ); ?>">
-				            <?php echo get_the_post_thumbnail( $c->ID, 'thumbnail' ); ?>
-							<figcaption class="gallery-caption">
-								<span class="gallery-title"><?php echo get_the_title( $c->ID ); ?></span>
-								<?php //echo get_the_excerpt( $c->ID ); ?>
+				            
+				            <?php //echo get_the_post_thumbnail( $c->ID, 'thumbnail' ); ?>
+				            
+				            <?php if ( has_post_thumbnail( $c->ID ) ) { 
+				            	echo get_the_post_thumbnail( $c->ID, 'thumbnail'); 
+				            } else { ?>
+
+							<?php echo '<img src="' . ACFB_PATH .'/img/fallback.png" alt="no picture">'; ?> 
+					             
+				           <?php } ?>
+				            
+							<figcaption class="acfb-gallery-caption">
+								<span class="acfb-caption-title"><?php echo get_the_title( $c->ID ); ?></span>
 							</figcaption>
 				        </a>
 				    </figure>

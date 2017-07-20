@@ -76,7 +76,7 @@ add_action('wp_enqueue_scripts', 'acfb_css');
 // ACF Fields & Ouput -----------------------
 --------------------------------------------- */
 
-// require_once('acf/acfb-fields.php' );  /// UNTIL OK !
+require_once('acf/acfb-fields.php');
 require_once('acf/acfb-output.php');
 
 
