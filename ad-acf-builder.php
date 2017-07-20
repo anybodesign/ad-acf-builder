@@ -59,14 +59,13 @@ function acfb_admin_notice(){
 	if( get_transient( 'acfb-admin-notice-transient' ) ){
 		?>
 		<div class="notice notice-info is-dismissible">
-			<p><?php _e( 'Remember, ACF Pro 5.6 or higher must be installed and activated!', 'ad-acfb' ); ?></p>
+			<p><?php _e( 'Remember, AD ACF Builder need ACF Pro 5.6 or higher to be installed and activated!', 'ad-acfb' ); ?></p>
 		</div>
 		<?php
 		delete_transient( 'acfb-admin-notice-transient' );
 	}
 }
 add_action( 'admin_notices', 'acfb_admin_notice' );
-
 
 
 /* ------------------------------------------
@@ -88,14 +87,12 @@ function acfb_css() {
 add_action('wp_enqueue_scripts', 'acfb_css');
 
 
-
 /* ------------------------------------------
 // ACF Fields & Ouput -----------------------
 --------------------------------------------- */
 
 require_once('acf/acfb-fields.php');
 require_once('acf/acfb-output.php');
-
 
 
 /* ------------------------------------------

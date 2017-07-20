@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: AD ACF Builder\n"
-"POT-Creation-Date: 2017-07-20 23:08+0200\n"
-"PO-Revision-Date: 2017-07-20 23:08+0200\n"
+"POT-Creation-Date: 2017-07-20 23:12+0200\n"
+"PO-Revision-Date: 2017-07-20 23:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,9 @@ msgid "Enlarge picture"
 msgstr ""
 
 #: ad-acf-builder.php:62
-msgid "Remember, ACF Pro 5.6 or higher must be installed and activated!"
+msgid ""
+"Remember, AD ACF Builder need ACF Pro 5.6 or higher to be installed and "
+"activated!"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
