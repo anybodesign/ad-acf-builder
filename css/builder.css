@@ -12,12 +12,16 @@
 	margin: 1.5em 0;
 }
 
-.acfb-row,
+@media only screen and (min-width: 50em) {
+	.acfb-row {
+		display: flex;
+		justify-content: space-between; 
+	}
+}
+
 .acfb-gallery-row {
 	display: flex;
 	justify-content: space-between; 
-}
-.acfb-gallery-row {
 	flex-wrap: wrap;
 	margin: 0 -.5em;
 }
