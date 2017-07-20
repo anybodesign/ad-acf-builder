@@ -48,8 +48,25 @@ load_plugin_textdomain( 'ad-acfb', false, basename( dirname( __FILE__ ) ) . '/la
 // Activation Alert -------------------------
 --------------------------------------------- */
 
+register_activation_hook( __FILE__, 'acfb_admin_notice_activation_hook' );
 
-// To-do…
+function acfb_admin_notice_activation_hook() {
+	set_transient( 'acfb-admin-notice-transient', true, 5 );
+}
+
+function acfb_admin_notice(){
+
+	if( get_transient( 'acfb-admin-notice-transient' ) ){
+		?>
+		<div class="notice notice-info is-dismissible">
+			<p><?php _e( 'Remember, ACF Pro 5.6 or higher must be installed and activated!', 'ad-acfb' ); ?></p>
+		</div>
+		<?php
+		delete_transient( 'acfb-admin-notice-transient' );
+	}
+}
+add_action( 'admin_notices', 'acfb_admin_notice' );
+
 
 
 /* ------------------------------------------
@@ -102,8 +119,3 @@ function acfb_fields( $content ) {
     }
     return $content;
 }
-
-
-// OUTPUT
-
-
