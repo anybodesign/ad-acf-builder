@@ -7,7 +7,7 @@
  * Requires at least: 4.0
  * Tested up to: 4.8
  * License: GNU/GPL 2
- * Author: Thomas Villain @anybodesign
+ * Author: anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: ad-acfb
  * Domain Path: /languages/
