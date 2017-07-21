@@ -4,14 +4,14 @@ function ad_acfbuilder_add_fields() {
 
 acf_add_local_field_group(array (
 	'key' => 'group_58c6bfd3a0239',
-	'title' => 'AD ACF Builder',
+	'title' => __('AD ACF Builder','ad-acfb'),
 	'fields' => array (
 		array (
 			'key' => 'field_58c6bfd90e6b4',
-			'label' => 'Page Builder',
+			'label' => __('Page Builder','ad-acfb'),
 			'name' => 'page_builder',
 			'type' => 'flexible_content',
-			'instructions' => 'Add some content!',
+			'instructions' => __('Add some content!','ad-acfb'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
@@ -23,15 +23,15 @@ acf_add_local_field_group(array (
 				'58c6bfee6ec2e' => array (
 					'key' => '58c6bfee6ec2e',
 					'name' => 'text_block',
-					'label' => 'Content block',
+					'label' => __('Content block','ad-acfb'),
 					'display' => 'block',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_58c6c01f0e6b5',
-							'label' => 'Layout',
+							'label' => __('Layout','ad-acfb'),
 							'name' => 'text_block_layout',
 							'type' => 'select',
-							'instructions' => 'Choose the layout for this block: 1, 2 or 3 columns',
+							'instructions' => __('Choose the layout for this block: 1, 2 or 3 columns','ad-acfb'),
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
@@ -40,9 +40,9 @@ acf_add_local_field_group(array (
 								'id' => '',
 							),
 							'choices' => array (
-								'1col' => '1 column',
-								'2col' => '2 columns',
-								'3col' => '3 columns',
+								'1col' => __('1 column','ad-acfb'),
+								'2col' => __('2 columns','ad-acfb'),
+								'3col' => __('3 columns','ad-acfb'),
 							),
 							'default_value' => array (
 								0 => '1col',
@@ -56,7 +56,7 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_5968734836216',
-							'label' => 'Content',
+							'label' => __('Content','ad-acfb'),
 							'name' => 'text_block_group',
 							'type' => 'group',
 							'instructions' => '',
@@ -72,7 +72,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 128,
 									'key' => 'field_58c6c0850e6b6',
-									'label' => 'Content Area',
+									'label' => __('Content Area','ad-acfb'),
 									'name' => 'text_block_area1',
 									'prefix' => 'acf',
 									'type' => 'wysiwyg',
@@ -102,7 +102,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 129,
 									'key' => 'field_58c6c0a70e6b7',
-									'label' => 'Content Area',
+									'label' => __('Content Area','ad-acfb'),
 									'name' => 'text_block_area2',
 									'prefix' => 'acf',
 									'type' => 'wysiwyg',
@@ -147,7 +147,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 130,
 									'key' => 'field_58c6c0c10e6b9',
-									'label' => 'Content Area',
+									'label' => __('Content Area','ad-acfb'),
 									'name' => 'text_block_area3',
 									'prefix' => 'acf',
 									'type' => 'wysiwyg',
@@ -191,12 +191,12 @@ acf_add_local_field_group(array (
 				'58c6c0ee0e6bb' => array (
 					'key' => '58c6c0ee0e6bb',
 					'name' => 'cta_block',
-					'label' => 'Call To Action block',
+					'label' => __('Call To Action block','ad-acfb'),
 					'display' => 'block',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_58c6c10ae5a58',
-							'label' => 'Text Area',
+							'label' => __('Text Area','ad-acfb'),
 							'name' => 'cta_block_text',
 							'type' => 'wysiwyg',
 							'instructions' => '',
@@ -215,7 +215,7 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_59686fbd2e6f8',
-							'label' => 'Link',
+							'label' => __('Link','ad-acfb'),
 							'name' => 'cta_block_link',
 							'type' => 'link',
 							'instructions' => '',
@@ -230,7 +230,7 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_59686ee62e6f7',
-							'label' => 'Style',
+							'label' => __('Style','ad-acfb'),
 							'name' => 'cta_block_style',
 							'type' => 'group',
 							'instructions' => '',
@@ -246,7 +246,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 177,
 									'key' => 'field_5968ab7c045cd',
-									'label' => 'Button Text Color',
+									'label' => __('Button Text Color','ad-acfb'),
 									'name' => 'cta_block_btncolor',
 									'prefix' => 'acf',
 									'type' => 'color_picker',
@@ -272,7 +272,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 178,
 									'key' => 'field_5968aba7045ce',
-									'label' => 'Button Background Color',
+									'label' => __('Button Background Color','ad-acfb'),
 									'name' => 'cta_block_btnbg',
 									'prefix' => 'acf',
 									'type' => 'color_picker',
@@ -298,13 +298,13 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 136,
 									'key' => 'field_58c6c14ee5a5a',
-									'label' => 'Text Color',
+									'label' => __('Text Color','ad-acfb'),
 									'name' => 'cta_block_color',
 									'prefix' => 'acf',
 									'type' => 'checkbox',
 									'value' => NULL,
 									'menu_order' => 2,
-									'instructions' => 'Check if you have set a dark background.',
+									'instructions' => __('Check if you have set a dark background.','ad-acfb'),
 									'required' => 0,
 									'id' => '',
 									'class' => '',
@@ -320,7 +320,7 @@ acf_add_local_field_group(array (
 									'_valid' => 1,
 									'parent_layout' => '58c6c0ee0e6bb',
 									'choices' => array (
-										'white_text' => 'White Text',
+										'white_text' => __('White Text','ad-acfb'),
 									),
 									'allow_custom' => 0,
 									'save_custom' => 0,
@@ -333,7 +333,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 145,
 									'key' => 'field_5967cd63bc399',
-									'label' => 'Background Color',
+									'label' => __('Background Color','ad-acfb'),
 									'name' => 'cta_block_bgcolor',
 									'prefix' => 'acf',
 									'type' => 'color_picker',
@@ -359,7 +359,7 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 135,
 									'key' => 'field_58c6c12fe5a59',
-									'label' => 'Background Image',
+									'label' => __('Background Image','ad-acfb'),
 									'name' => 'cta_block_bg',
 									'prefix' => 'acf',
 									'type' => 'image',
@@ -394,13 +394,13 @@ acf_add_local_field_group(array (
 								array (
 									'ID' => 204,
 									'key' => 'field_596f6dc312601',
-									'label' => 'Overlay',
+									'label' => __('Overlay','ad-acfb'),
 									'name' => 'cta_block_overlay',
 									'prefix' => 'acf',
 									'type' => 'checkbox',
 									'value' => NULL,
 									'menu_order' => 5,
-									'instructions' => 'Add an image overlay',
+									'instructions' => __('Add an image overlay','ad-acfb'),
 									'required' => 0,
 									'id' => '',
 									'class' => '',
@@ -416,7 +416,7 @@ acf_add_local_field_group(array (
 									'_valid' => 1,
 									'parent_layout' => '58c6c0ee0e6bb',
 									'choices' => array (
-										'balck_overlay' => 'Black Overlay',
+										'balck_overlay' => __('Black Overlay','ad-acfb'),
 									),
 									'allow_custom' => 0,
 									'save_custom' => 0,
@@ -435,12 +435,12 @@ acf_add_local_field_group(array (
 				'58c6c277e5a60' => array (
 					'key' => '58c6c277e5a60',
 					'name' => 'gallery_block',
-					'label' => 'Photo Gallery',
+					'label' => __('Photo Gallery','ad-acfb'),
 					'display' => 'block',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_58c6c277e5a61',
-							'label' => 'Title (h2)',
+							'label' => __('Title (h2)','ad-acfb'),
 							'name' => 'gallery_block_title',
 							'type' => 'text',
 							'instructions' => '',
@@ -459,7 +459,7 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_58cbd8f6d88e6',
-							'label' => 'Columns',
+							'label' => __('Columns','ad-acfb'),
 							'name' => 'gallery_block_cols',
 							'type' => 'select',
 							'instructions' => '',
@@ -471,10 +471,10 @@ acf_add_local_field_group(array (
 								'id' => '',
 							),
 							'choices' => array (
-								'col-6' => '2 colums',
-								'col-4' => '3 colums',
-								'col-3' => '4 colums',
-								'col-2' => '6 colums',
+								'col-6' => __('2 columns','ad-acfb'),
+								'col-4' => __('3 columns','ad-acfb'),
+								'col-3' => __('4 columns','ad-acfb'),
+								'col-2' => __('6 columns','ad-acfb'),
 							),
 							'default_value' => array (
 								0 => 'col-3',
@@ -488,7 +488,7 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_58c6c290e5a63',
-							'label' => 'Gallery',
+							'label' => __('Gallery','ad-acfb'),
 							'name' => 'gallery_block_img',
 							'type' => 'gallery',
 							'instructions' => '',
@@ -518,12 +518,12 @@ acf_add_local_field_group(array (
 				'58c6c1e5e5a5d' => array (
 					'key' => '58c6c1e5e5a5d',
 					'name' => 'content_gallery_block',
-					'label' => 'Content Gallery',
+					'label' => __('Content Gallery','ad-acfb'),
 					'display' => 'block',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_58c6c217e5a5e',
-							'label' => 'Title (h2)',
+							'label' => __('Title (h2)','ad-acfb'),
 							'name' => 'content_gallery_block_title',
 							'type' => 'text',
 							'instructions' => '',
@@ -542,7 +542,7 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_58cbdaac94eed',
-							'label' => 'Columns',
+							'label' => __('Columns','ad-acfb'),
 							'name' => 'content_gallery_block_cols',
 							'type' => 'select',
 							'instructions' => '',
@@ -554,10 +554,10 @@ acf_add_local_field_group(array (
 								'id' => '',
 							),
 							'choices' => array (
-								'col-6' => '2 columns',
-								'col-4' => '3 columns',
-								'col-3' => '4 columns',
-								'col-2' => '6 columns',
+								'col-6' => __('2 columns','ad-acfb'),
+								'col-4' => __('3 columns','ad-acfb'),
+								'col-3' => __('4 columns','ad-acfb'),
+								'col-2' => __('6 columns','ad-acfb'),
 							),
 							'default_value' => array (
 								0 => 'col-4',
@@ -571,10 +571,10 @@ acf_add_local_field_group(array (
 						),
 						array (
 							'key' => 'field_58c6c224e5a5f',
-							'label' => 'Content',
+							'label' => __('Content','ad-acfb'),
 							'name' => 'content_gallery_block_content',
 							'type' => 'relationship',
-							'instructions' => 'Choose the posts, pages or custom post type you want in the gallery',
+							'instructions' => __('Choose the posts, pages or custom post type you want in the gallery','ad-acfb'),
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array (
@@ -603,7 +603,7 @@ acf_add_local_field_group(array (
 					'max' => '',
 				),
 			),
-			'button_label' => 'Add Content',
+			'button_label' => __('Add Content','ad-acfb'),
 			'min' => '',
 			'max' => '',
 		),

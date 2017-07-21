@@ -1,14 +1,18 @@
 <?php
 /**
  * Plugin Name: AD ACF Builder
- * Description: Add a Page Builder to your pages and posts, based on ACF flexible fields. 
- * Version: 1.0
- * Author: Thomas Villain - Anybodesign
- * Author URI: https://anybodesign.com/
  * Plugin URI: https://github.com/anybodesign/ad-acf-builder
- * License: GPL2
+ * Description: Add a Page Builder to your pages and posts, based on ACF flexible fields.
+ * Version: 1.0
+ * Requires at least: 4.0
+ * Tested up to: 4.8
+ * License: GNU/GPL 2
+ * Author: Thomas Villain @anybodesign
+ * Author URI: https://anybodesign.com/
  * Text Domain: ad-acfb
  * Domain Path: /languages/
+ * Network: True
+ * GitHub Plugin URI: https://github.com/anybodesign/ad-acf-builder
 */
 
 /*

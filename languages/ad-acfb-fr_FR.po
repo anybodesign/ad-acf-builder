@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Builder\n"
-"POT-Creation-Date: 2017-07-20 23:11+0200\n"
-"PO-Revision-Date: 2017-07-20 23:12+0200\n"
+"POT-Creation-Date: 2017-07-21 09:38+0200\n"
+"PO-Revision-Date: 2017-07-21 10:26+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -21,21 +21,156 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#. Plugin Name of the plugin/theme
+#: acf/acfb-fields.php:7
+msgid "AD ACF Builder"
+msgstr "AD ACF Builder"
+
+#: acf/acfb-fields.php:11
+msgid "Page Builder"
+msgstr "Constructeur de page"
+
+#: acf/acfb-fields.php:14
+msgid "Add some content!"
+msgstr "Ajoutez du contenu !"
+
+#: acf/acfb-fields.php:26
+msgid "Content block"
+msgstr "Bloc de contenu"
+
+#: acf/acfb-fields.php:31
+msgid "Layout"
+msgstr "MIse en page"
+
+#: acf/acfb-fields.php:34
+msgid "Choose the layout for this block: 1, 2 or 3 columns"
+msgstr "Choisissez la mise en page pour ce bloc : 1, 2 ou 3 colonnes"
+
+#: acf/acfb-fields.php:43
+msgid "1 column"
+msgstr "1 colonne"
+
+#: acf/acfb-fields.php:44 acf/acfb-fields.php:474 acf/acfb-fields.php:557
+msgid "2 columns"
+msgstr "2 colonnes"
+
+#: acf/acfb-fields.php:45 acf/acfb-fields.php:475 acf/acfb-fields.php:558
+msgid "3 columns"
+msgstr "3 colonnes"
+
+#: acf/acfb-fields.php:59 acf/acfb-fields.php:574
+msgid "Content"
+msgstr "Contenu"
+
+#: acf/acfb-fields.php:75 acf/acfb-fields.php:105 acf/acfb-fields.php:150
+msgid "Content Area"
+msgstr "Zone de contenu"
+
+#: acf/acfb-fields.php:194
+msgid "Call To Action block"
+msgstr "Zone d'appel à l'action"
+
+#: acf/acfb-fields.php:199
+msgid "Text Area"
+msgstr "Zone de texte"
+
+#: acf/acfb-fields.php:218
+msgid "Link"
+msgstr "Lien"
+
+#: acf/acfb-fields.php:233
+msgid "Style"
+msgstr "Style"
+
+#: acf/acfb-fields.php:249
+msgid "Button Text Color"
+msgstr "Couleur du texte du bouton"
+
+#: acf/acfb-fields.php:275
+msgid "Button Background Color"
+msgstr "Couleur d’arrière plan du bouton"
+
+#: acf/acfb-fields.php:301
+msgid "Text Color"
+msgstr "Couleur du texte"
+
+#: acf/acfb-fields.php:307
+msgid "Check if you have set a dark background."
+msgstr "Cochez, si vous utilisez un arrière-plan sombre."
+
+#: acf/acfb-fields.php:323
+msgid "White Text"
+msgstr "Texte en blanc"
+
+#: acf/acfb-fields.php:336
+msgid "Background Color"
+msgstr "Couleur d’arrière-plan"
+
+#: acf/acfb-fields.php:362
+msgid "Background Image"
+msgstr "Image d'arrière-plan"
+
+#: acf/acfb-fields.php:397
+msgid "Overlay"
+msgstr "Superposition"
+
+#: acf/acfb-fields.php:403
+msgid "Add an image overlay"
+msgstr "Ajouter une superposition à l'image"
+
+#: acf/acfb-fields.php:419
+msgid "Black Overlay"
+msgstr "Superposition noire"
+
+#: acf/acfb-fields.php:438
+msgid "Photo Gallery"
+msgstr "Galerie Photos"
+
+#: acf/acfb-fields.php:443 acf/acfb-fields.php:526
+msgid "Title (h2)"
+msgstr "Titre (h2)"
+
+#: acf/acfb-fields.php:462 acf/acfb-fields.php:545
+msgid "Columns"
+msgstr "Colonnes"
+
+#: acf/acfb-fields.php:476 acf/acfb-fields.php:559
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: acf/acfb-fields.php:477 acf/acfb-fields.php:560
+msgid "6 columns"
+msgstr "6 colonnes"
+
+#: acf/acfb-fields.php:491
+msgid "Gallery"
+msgstr "Galerie"
+
+#: acf/acfb-fields.php:521
+msgid "Content Gallery"
+msgstr "Galerie de contenu"
+
+#: acf/acfb-fields.php:577
+msgid "Choose the posts, pages or custom post type you want in the gallery"
+msgstr ""
+"Choisissez les publications, les pages ou le type de publication "
+"personnalisé que vous souhaitez dans la galerie"
+
+#: acf/acfb-fields.php:606
+msgid "Add Content"
+msgstr "Ajoutez du contenu"
+
 #: acf/acfb-output.php:142
 msgid "Enlarge picture"
 msgstr "Agrandir la photo"
 
-#: ad-acf-builder.php:62
+#: ad-acf-builder.php:66
 msgid ""
 "Remember, AD ACF Builder need ACF Pro 5.6 or higher to be installed and "
 "activated!"
 msgstr ""
 "N'oubliez pas, AD ACF Builder nécessite que ACF Pro 5.6 ou supérieur soit "
 "installé et activé !"
-
-#. Plugin Name of the plugin/theme
-msgid "AD ACF Builder"
-msgstr "AD ACF Builder"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/anybodesign/ad-acf-builder"
@@ -49,8 +184,8 @@ msgstr ""
 "flexibles ACF."
 
 #. Author of the plugin/theme
-msgid "Thomas Villain - Anybodesign"
-msgstr "Thomas Villain - Anybodesign"
+msgid "Thomas Villain @anybodesign"
+msgstr "Thomas Villain @anybodesign"
 
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
