@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Builder\n"
-"POT-Creation-Date: 2017-07-21 09:38+0200\n"
-"PO-Revision-Date: 2017-07-21 10:26+0200\n"
+"POT-Creation-Date: 2017-07-21 11:17+0200\n"
+"PO-Revision-Date: 2017-07-21 11:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -166,7 +166,7 @@ msgstr "Agrandir la photo"
 
 #: ad-acf-builder.php:66
 msgid ""
-"Remember, AD ACF Builder need ACF Pro 5.6 or higher to be installed and "
+"Remember, AD ACF Builder need ACF Pro 5.6 or greater to be installed and "
 "activated!"
 msgstr ""
 "N'oubliez pas, AD ACF Builder nécessite que ACF Pro 5.6 ou supérieur soit "
@@ -184,9 +184,13 @@ msgstr ""
 "flexibles ACF."
 
 #. Author of the plugin/theme
-msgid "Thomas Villain @anybodesign"
-msgstr "Thomas Villain @anybodesign"
+#| msgid "https://anybodesign.com/"
+msgid "anybodesign"
+msgstr "anybodesign"
 
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Thomas Villain @anybodesign"
+#~ msgstr "Thomas Villain @anybodesign"

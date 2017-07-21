@@ -63,7 +63,7 @@ function acfb_admin_notice(){
 	if( get_transient( 'acfb-admin-notice-transient' ) ){
 		?>
 		<div class="notice notice-info is-dismissible">
-			<p><?php _e( 'Remember, AD ACF Builder need ACF Pro 5.6 or higher to be installed and activated!', 'ad-acfb' ); ?></p>
+			<p><?php _e( 'Remember, AD ACF Builder need ACF Pro 5.6 or greater to be installed and activated!', 'ad-acfb' ); ?></p>
 		</div>
 		<?php
 		delete_transient( 'acfb-admin-notice-transient' );

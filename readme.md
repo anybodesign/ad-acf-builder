@@ -26,6 +26,7 @@ Advanced Custom Fields Pro 5.6 or greater has to be installed and activated.
 
 ## To-do
 
+* Responsive option for columns
 * Add more fields!
 
 
