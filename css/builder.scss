@@ -97,13 +97,13 @@
 	}
 	
 	&::before {
-		@include linkblock();
-		transition: background .2s ease-in-out;
-		background-color: transparent;	
+		//@include linkblock();
+		//transition: background .2s ease-in-out;
+		//background-color: transparent;	
 	}
 	&:hover::before,
 	&:focus::before {
-		background-color: rgba(255, 255, 255, 0.4);	
+		//background-color: rgba(255, 255, 255, 0.4);	
 	}
 }
 
