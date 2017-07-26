@@ -3,7 +3,7 @@
  * Plugin Name: AD ACF Builder
  * Plugin URI: https://github.com/anybodesign/ad-acf-builder
  * Description: Add a Page Builder to your pages and posts, based on ACF flexible fields.
- * Version: 1.1
+ * Version: 1.1.1
  * Requires at least: 4.0
  * Tested up to: 4.8
  * License: GNU/GPL 2
@@ -40,7 +40,7 @@ defined('ABSPATH') or die();
 
 define('ACFB_PATH', WP_PLUGIN_URL . '/' . plugin_basename( dirname(__FILE__) ) . '/' );
 define('ACFB_NAME', 'AD ACF Builder');
-define('ACFB_VERSION', '1.1');
+define('ACFB_VERSION', '1.1.1');
 
 
 // i18n
