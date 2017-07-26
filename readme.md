@@ -2,7 +2,8 @@
 
 ## Description 
 
-AD ACF Builder is an add-on for Advanced Custom Fields Pro 5.6 or greater. It's a page builder for your pages and posts, once the plugin is activated, you'll be able to add different types of content to your publications. 
+AD ACF Builder is an add-on for Advanced Custom Fields Pro 5.6 or greater. It's a page builder for your pages and posts, once the plugin is activated, you'll be able to add different types of content to your publications.
+Watch the [demo video!](https://vimeo.com/227044879) 
 
 ### Available fields
 
