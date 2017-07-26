@@ -33,8 +33,12 @@ Advanced Custom Fields Pro 5.6 or greater has to be installed and activated.
 
 ## Changelog
 
-### 2017-07-21
-* 1.0
+### 2017-07-26 - 1.1
+* CSS fix: gallery columns
+* Bugfix: your site won't break if the plugin is activated whereas ACF is not 
+
+### 2017-07-21 - 1.0
+* First release on the Entrepôt :)
 
 ### 2017-07-13
 * Initial Commit
