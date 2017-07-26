@@ -111,6 +111,25 @@
 	}
 }
 
+.acfb-overlay {
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%; height: 100%;
+		background-image: linear-gradient(to top, rgba(0,0,0, .65) 0%, rgba(0,0,0, 0) 100%);
+		z-index: 1;
+	}
+	
+	.acfb-cta-text,
+	.acfb-cta-btn {
+		position: relative;
+		z-index: 2;
+	}
+	
+}
+
 .acfb-cta-text {
 	// nada
 }
@@ -132,30 +151,13 @@
 
 }
 
-.acfb-overlay {
-	
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0; left: 0;
-		width: 100%; height: 100%;
-		background-image: linear-gradient(to top, rgba(0,0,0, .65) 0%, rgba(0,0,0, 0) 100%);
-		z-index: 1;
-	}
-	
-	.acfb-cta-text {
-		position: relative;
-		z-index: 2;
-	}
-	
-}
-
 @include rwd(large) {
 	
 	.acfb-gallery-caption {
 		position: absolute;
 		top: 0; left: 0;
 		width: 100%; height: 100%;
+		margin: 0;
 		background-color: rgba(0,0,0,.75);
 		opacity: 0;
 		transition: opacity .2s ease-in-out;
