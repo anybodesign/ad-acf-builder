@@ -1,6 +1,9 @@
 <?php 
 	defined('ABSPATH') or die(); 
-	function acfb_ouput() { 
+	function acfb_ouput() {
+		
+		
+	if (function_exists('have_rows')) {	 
 ?>
 	
 	<div class="ad-acf-builder">
@@ -225,4 +228,4 @@
 	
 	</div>
 
-<?php }
+<?php } }
